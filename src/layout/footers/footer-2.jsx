@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from "next/image";
 
 const footer_contents = {
   shapes: [
@@ -9,7 +10,7 @@ const footer_contents = {
   title: 'Let’s build something together',
   text: 'At Homescriptone Solutions, we specialize in designing, building beautiful usable WordPress websites, plugins and themes.',
   btn_text: 'Contact us',
-  copy_right_text: <>© {new Date().getFullYear()} A project by <strong><a target="_blank" href="https://homescriptone.com">Homescriptone Solutions</a></strong>, All Right Received.</>,
+  copy_right_text: <>© {new Date().getFullYear()} A project by <strong><a target="_blank" href="https://homescriptone.com" rel="nofollow">Homescriptone Solutions</a></strong>, All Right Received.</>,
   copy_right_menu: [
     {text:'Submit',link:'/submit'},
     {text:'Privacy Policy', link:'/privacy-policy'}
@@ -30,7 +31,10 @@ const FooterTwo = () => {
     <footer className="p-relative">
       <div className="tp-footer-area pt-120 p-relative">
         {shapes.map((s, i) => <div key={i} className={`tp-footer-shape-${s.num}`}>
-          <img src={s.img} alt="" />
+          <Image
+            src={s.img}
+            alt=""
+            />
         </div>)}
         <div className="container">
           <div className="row">
