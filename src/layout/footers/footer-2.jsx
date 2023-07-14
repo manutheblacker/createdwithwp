@@ -10,7 +10,7 @@ const footer_contents = {
   title: 'Let’s build something together',
   text: 'At Homescriptone Solutions, we specialize in designing, building beautiful usable WordPress websites, plugins and themes.',
   btn_text: 'Contact us',
-  copy_right_text: <>© {new Date().getFullYear()} A project by <strong><a target="_blank" href="https://homescriptone.com" rel="nofollow">Homescriptone Solutions</a></strong>, All Right Received.</>,
+  copy_right_text: <>© {new Date().getFullYear()} A project by <strong><a target="_blank" href="https://homescriptone.com" rel="noreferrer">Homescriptone Solutions</a></strong>, All Right Received.</>,
   copy_right_menu: [
     {text:'Submit',link:'/submit'},
     {text:'Privacy Policy', link:'/privacy-policy'}
