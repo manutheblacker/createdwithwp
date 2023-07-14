@@ -58,7 +58,7 @@ const FooterTwo = () => {
               </div>
               <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                 <div className="tp-cpoyright-menu text-md-start text-center text-lg-center mb-30">
-                  {copy_right_menu.map((m, i) => <a key={i} href={m.link}>{m.text}</a>)}
+                  {copy_right_menu.map((m, i) => <a key={i} href={m.link} rel="noreferer">{m.text}</a>)}
                 </div>
               </div>
               <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
