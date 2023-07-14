@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ImageLightBox from '../../common/modals/image-lightbox';
 
 const portfolio_data = [
-  { img: '/assets/img/portfolio/port-4.jpg', category: 'Website' },
+  { img: 'https://saaslandingpage.com/wp-content/uploads/2021/01/intercom-2.png', category: 'Intercom' },
   { img: '/assets/img/portfolio/port-1.jpg', category: 'Website' },
   { img: '/assets/img/portfolio/port-2.jpg', category: 'Website' },
   { img: '/assets/img/portfolio/port-3.jpg', category: 'Website' },

@@ -12,7 +12,7 @@ const NavMenus = () => {
             <a>{menu.title} {menu.has_dropdown && <i className="fal fa-angle-down"></i>}</a>
           </Link>
           {menu.has_dropdown && <ul className="submenu text-start">
-            {menu.sub_menus.map((sub_m, i) => (
+            { menu.sub_menus !== undefined && menu.sub_menus.map((sub_m, i) => (
               <li key={i}>
                 <Link href={sub_m.link}>
                   <a>{sub_m.title}</a>

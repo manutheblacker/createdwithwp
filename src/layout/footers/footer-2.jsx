@@ -7,18 +7,22 @@ const footer_contents = {
     { num: 'two', img: '/assets/img/service/service-1.png' },
   ],
   title: 'Let’s build something together',
-  text: 'At Collax we specialize in designing, building, shipping and scaling beautiful, usable products with blazing-fast efficiency',
+  text: 'At Homescriptone Solutions, we specialize in designing, building beautiful usable WordPress websites, plugins and themes.',
   btn_text: 'Contact us',
-  copy_right_text: <>© {new Date().getFullYear()} Personal Portfolio , All Right Received.</>,
-  copy_right_menu: ['Case Studies', 'Pricing Plan'],
-  social_links: ['fab fa-linkedin-in', 'fab fa-facebook-f', 'fab fa-instagram', 'fab fa-youtube'],
+  copy_right_text: <>© {new Date().getFullYear()} A project by <strong><a target="_blank" href="https://homescriptone.com">Homescriptone Solutions</a></strong>, All Right Received.</>,
+  copy_right_menu: [
+    {text:'Submit',link:'/submit'},
+    {text:'Privacy Policy', link:'/privacy-policy'}
+  ],
   social_links: [
-    {icon: 'fab fa-linkedin-in',link: 'https://www.linkedin.com/' },
-    {icon: 'fab fa-facebook-f',link: 'http://facebook.com' },
-    {icon: 'fab fa-instagram',link: 'https://www.instagram.com/' },
-    {icon: 'fab fa-youtube',link: 'https://www.youtube.com/' },
+    {icon: 'fab fa-linkedin-in',link: 'https://www.linkedin.com/company/homescriptonee' },
+    {icon:'fab fa-github', link:'https://github.com/homescriptone/'},
+    {icon: 'fab fa-facebook-f',link: 'https://www.facebook.com/homescriptonee' },
+    // {icon: 'fa fa-envelope',link: 'https://homescriptone.freshdesk.com' },
+    {icon: 'fab fa-youtube',link: 'https://www.youtube.com/@homescriptone' },
   ],
 }
+
 const { shapes, btn_text, copy_right_menu, copy_right_text, social_links, text, title } = footer_contents;
 
 const FooterTwo = () => {
@@ -54,7 +58,7 @@ const FooterTwo = () => {
               </div>
               <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                 <div className="tp-cpoyright-menu text-md-start text-center text-lg-center mb-30">
-                  {copy_right_menu.map((m, i) => <a key={i} href="#">{m}</a>)}
+                  {copy_right_menu.map((m, i) => <a key={i} href={m.link}>{m.text}</a>)}
                 </div>
               </div>
               <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
